@@ -1,0 +1,11 @@
+@import 'src/assets/styles/variables';
+
+.todo-input{
+  max-width: 600px;
+  background-color: $gray-500;
+}
+
+.submit-todo-button{
+  padding: 10px;
+  background-color: $blue;
+}

@@ -1,0 +1,18 @@
+@import 'src/assets/styles/variables';
+
+.todos-container{
+  min-height: 400px;
+
+  .clipboard{
+    color: $gray-400;
+    font-size: 3rem;
+  }
+
+  .todos-placeholder-text{
+    &:first-of-type{
+      color: $gray-200;
+      font-size: 1.1rem;
+    }
+    color: $gray-300;
+  }
+}

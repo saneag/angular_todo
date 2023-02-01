@@ -1,0 +1,14 @@
+@import 'src/assets/styles/variables';
+
+.total-todos{
+  background-color: $gray-400;
+  height: 20px;
+}
+
+.total-title{
+  color: $blue;
+}
+
+.finished-title{
+  color: $purple
+}

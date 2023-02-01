@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="input-group gap-3 d-flex justify-content-center">
+      <input [(ngModel)]="todo" type="text" placeholder="Enter a TODO..." class="todo-input form-control border-0 text-light shadow-none"/>
+    <div class="input-group-append">
+      <button (click)="showInputData()" class="btn btn-primary submit-todo-button d-flex justify-content-center align-content-center gap-2" type="button">Add
+        <span class="material-symbols-outlined">add_circle</span>
+      </button>
+    </div>
+  </div>
+</div>

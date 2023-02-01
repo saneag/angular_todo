@@ -1,0 +1,18 @@
+<!--no todos-->
+<div class="container border-top mt-3 todos-container d-flex align-items-center justify-content-center">
+  <div class="d-flex align-items-center justify-content-center flex-column h-100">
+    <div *ngIf="(todosList$ | async)?.length == 0; else content"
+      class="d-flex align-items-center justify-content-center flex-column">
+      <span class="material-symbols-outlined clipboard">assignment</span>
+      <div class="d-flex align-items-center justify-content-center flex-column gap-1">
+        <span class="todos-placeholder-text">All todos will be shown below</span>
+        <span class="todos-placeholder-text">To add a todo write in input and click add</span>
+      </div>
+    </div>
+  </div>
+  <ng-template #content>
+    <div *ngFor="let todo of todosList$ | async">
+      <p> {{ todo.text }}</p>
+    </div>
+  </ng-template>
+</div>
